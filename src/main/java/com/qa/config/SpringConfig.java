@@ -2,9 +2,7 @@ package com.qa.config;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.context.annotation.Bean;
-
 import com.qa.beans.Owner;
 import com.qa.beans.Pet;
 
@@ -46,9 +44,8 @@ public class SpringConfig {
 		owner1.setTel("+447897-456465");
 
 		List<Pet> pets = new ArrayList<Pet>();
-		
+
 		pets.add(pet2Bean());
-		pets.add(pet3Bean());
 
 		owner1.setPets(pets);
 
@@ -66,9 +63,26 @@ public class SpringConfig {
 		List<Pet> pets = new ArrayList<Pet>();
 
 		pets.add(pet1Bean());
-		
+
 		owner2.setPets(pets);
 
 		return owner2;
+	}
+	
+	@Bean
+	public Owner owner3Bean() {
+		Owner owner3 = new Owner();
+
+		owner3.setName("Rosa");
+		owner3.setAddress("Poznan");
+		owner3.setTel("+48789654789");
+
+		List<Pet> pets = new ArrayList<Pet>();
+
+		pets.add(pet3Bean());
+
+		owner3.setPets(pets);
+
+		return owner3;
 	}
 }

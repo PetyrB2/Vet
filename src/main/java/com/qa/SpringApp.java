@@ -18,7 +18,8 @@ public class SpringApp {
 
 		Owner owner1 = (Owner) ctx.getBean("owner1Bean");
 		Owner owner2 = (Owner) ctx.getBean("owner2Bean");
-
+		Owner owner3 = (Owner) ctx.getBean("owner3Bean");
+		
 		List<Pet> petsA = owner1.getPets();
 
 		for (Pet p : petsA) {
@@ -36,6 +37,17 @@ public class SpringApp {
 			System.out.println("Owner 2:");
 			System.out.println("---------");
 			System.out.println("Owner: " + owner2.getName() + "\nAddress: " + owner2.getAddress() + "\nTelephone: "
+					+ owner2.getTel());
+			System.out.println("Pet Name: " + p.getName() + "\nSpecies: " + p.getSpecies() + "\nD.o.b.: " + p.getDob());
+			System.out.println("");
+		}
+		
+		List<Pet> petsC = owner3.getPets();
+		for (Pet p : petsC) {
+			System.out.println("");
+			System.out.println("Owner 3:");
+			System.out.println("---------");
+			System.out.println("Owner: " + owner3.getName() + "\nAddress: " + owner3.getAddress() + "\nTelephone: "
 					+ owner2.getTel());
 			System.out.println("Pet Name: " + p.getName() + "\nSpecies: " + p.getSpecies() + "\nD.o.b.: " + p.getDob());
 			System.out.println("");
