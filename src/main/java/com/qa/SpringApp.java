@@ -22,14 +22,21 @@ public class SpringApp {
 		List<Pet> petsA = owner1.getPets();
 
 		for (Pet p : petsA) {
+			System.out.println("");
 			System.out.println("Owner 1:");
-			System.out.println("Pet Name :" + p.getName() + "\nPet Owner: " + owner1.getName() + "\n----------------");
+			System.out.println("---------");
+			System.out.println("Owner: " + owner1.getName() + "\nAddress: " + owner1.getAddress() + "\nTelephone: " + owner1.getTel());
+			System.out.println("Pet Name: " + p.getName());
 		}
 
 		List<Pet> petsB = owner2.getPets();
 		for (Pet p : petsB) {
+			System.out.println("");
 			System.out.println("Owner 2:");
-			System.out.println("Pet Name :" + p.getName() + "\nPet Owner: " + owner2.getName() + "\n----------------");
+			System.out.println("---------");
+			System.out.println("Owner: " + owner2.getName() + "\nAddress: " + owner2.getAddress() + "\nTelephone: " + owner2.getTel());
+			System.out.println("Pet Name: " + p.getName());
+			System.out.println("");
 		}
 
 		((ConfigurableApplicationContext) ctx).close();

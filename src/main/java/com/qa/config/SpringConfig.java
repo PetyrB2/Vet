@@ -32,6 +32,8 @@ public class SpringConfig {
 		Owner owner1 = new Owner();
 
 		owner1.setName("Bobby");
+		owner1.setAddress("London");
+		owner1.setTel("+447897-456465");
 
 		List<Pet> pets = new ArrayList<Pet>();
 		
@@ -48,7 +50,9 @@ public class SpringConfig {
 		Owner owner2 = new Owner();
 
 		owner2.setName("Antonio");
-		
+		owner2.setAddress("Almeria");
+		owner2.setTel("+34455646568");
+
 		List<Pet> pets = new ArrayList<Pet>();
 
 		pets.add(pet1Bean());
