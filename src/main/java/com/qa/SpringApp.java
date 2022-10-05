@@ -25,8 +25,9 @@ public class SpringApp {
 			System.out.println("");
 			System.out.println("Owner 1:");
 			System.out.println("---------");
-			System.out.println("Owner: " + owner1.getName() + "\nAddress: " + owner1.getAddress() + "\nTelephone: " + owner1.getTel());
-			System.out.println("Pet Name: " + p.getName());
+			System.out.println("Owner: " + owner1.getName() + "\nAddress: " + owner1.getAddress() + "\nTelephone: "
+					+ owner1.getTel());
+			System.out.println("Pet Name: " + p.getName() + "\nSpecies: " + p.getSpecies() + "\nD.o.b.: " + p.getDob());
 		}
 
 		List<Pet> petsB = owner2.getPets();
@@ -34,12 +35,12 @@ public class SpringApp {
 			System.out.println("");
 			System.out.println("Owner 2:");
 			System.out.println("---------");
-			System.out.println("Owner: " + owner2.getName() + "\nAddress: " + owner2.getAddress() + "\nTelephone: " + owner2.getTel());
-			System.out.println("Pet Name: " + p.getName());
+			System.out.println("Owner: " + owner2.getName() + "\nAddress: " + owner2.getAddress() + "\nTelephone: "
+					+ owner2.getTel());
+			System.out.println("Pet Name: " + p.getName() + "\nSpecies: " + p.getSpecies() + "\nD.o.b.: " + p.getDob());
 			System.out.println("");
 		}
 
 		((ConfigurableApplicationContext) ctx).close();
 	}
-
 }
