@@ -14,17 +14,27 @@ public class SpringConfig {
 	public Pet pet1Bean() {
 		Pet pet = new Pet();
 		pet.setName("Meower");
+		pet.setSpecies("Cat");
+		pet.setDob("01/01/2018");
 		return pet;
 	}
 
 	@Bean
 	Pet pet2Bean() {
-		return new Pet("Woofer");
+		Pet pet = new Pet();
+		pet.setName("Dougal");
+		pet.setSpecies("Dog");
+		pet.setDob("02/02/2022");
+		return pet;
 	}
 
 	@Bean
 	Pet pet3Bean() {
-		return new Pet("Squeeks");
+		Pet pet = new Pet();
+		pet.setName("Mr Squeeks");
+		pet.setSpecies("Mouse");
+		pet.setDob("03/03/2013");
+		return pet;
 	}
 
 	@Bean
