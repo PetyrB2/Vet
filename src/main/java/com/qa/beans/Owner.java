@@ -1,5 +1,6 @@
 package com.qa.beans;
 
+// Imports
 import java.util.List;
 
 public class Owner {
@@ -8,7 +9,7 @@ public class Owner {
 	private String name;
 	private String address;
 	private String tel;
-	
+
 	// Create a List called pets
 	private List<Pet> pets;
 
